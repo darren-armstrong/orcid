@@ -1,0 +1,55 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="orcid-get-data-script.js"></script>
+  <link rel="stylesheet" href="orcid-styling.css">
+</head>
+<body>
+<div id="orcid-api-container">
+	<img id="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/ORCID_logo.svg/2000px-ORCID_logo.svg.png" /> 
+	<br/> 
+	<div class="form-group">
+		<input type="BUTTON" class="btn btn-success search_orcid" name="Search for ORCID iD" 
+			value="Search for ORCID iD" />
+		<input type="hidden" value="1" class="orcid-authorship" />
+	</div>
+	<div class="form-group">
+		<label for="orcid-user-identifier-1">Author's Orcid ID</label>
+		<input id="orcid-user-identifier-1" class="form-control" readonly value="" />
+	</div>
+	<div class="form-group">
+		<label for="orcid-user-fname-1">Author's First Name</label>
+		<input id="orcid-user-fname-1" type="text" class="form-control" value="" />
+	</div>
+	<div class="form-group">
+		<label for="orid-user-lname-1">Author's Last Name</label>
+		<input id="orcid-user-lname-1" type="text" class="form-control" value="" />
+	</div>
+	<div class="form-group">
+		<label for="orcid-user-url-1">Author's URL</label>
+		<input id="orcid-user-url-1" type="text" class="form-control" value="" />
+	</div>
+	<br/>
+	<div class="form-group">
+		<input type="BUTTON" class="btn btn-success search_orcid" name="Search for ORCID iD" 
+			value="Search for ORCID iD" />
+		<input type="hidden" value="2" class="orcid-authorship" />
+	</div>
+	<div class="form-group">
+		<label for="orcid-user-identifier-2">Author's Orcid ID</label>
+		<input id="orcid-user-identifier-2" class="form-control" readonly value="" />
+	</div>
+	<div class="form-group">
+		<label for="orcid-user-fname-2">Author's First Name</label>
+		<input id="orcid-user-fname-2" type="text" class="form-control" value="" />
+	</div>
+	<div class="form-group">
+		<label for="orid-user-lname-2">Author's Last Name</label>
+		<input id="orcid-user-lname-2" type="text" class="form-control" value="" />
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.0/bootstrap-table.min.js"></script>
+  <script src="orcid-api-script.js"></script>
+  <link rel="stylesheet" href="orcid-styling.css">
+</head>
+<body>
+<div id="orcid-api-container">
+	<img id="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/ORCID_logo.svg/2000px-ORCID_logo.svg.png" /> 
+	<br/> 
+	<h3>
+		ORCID <span class="glyphicon glyphicon-registration-mark"></span> Search
+	</h3>
+	<div id="search-bar">
+		<div class="input-group">
+			<input type="text" id="orcid-search-value" class="form-control" placeholder="Enter an ORCID ID or search by name..." /> 
+			<span class="input-group-btn">
+				<button id="search-value-check" class="btn btn-default" type="button">Search</button>
+				<button id="search-value-clear" class="btn btn-default" type="button">Clear</button>
+			</span>
+		</div><!-- /input-group -->
+	</div>
+	<br/>
+	<input type="checkbox" id="orcid-result-display" />
+	<div id="orcid-results-returned">e.g. '1234-5678-9012-3456' or 'Jane Smith'</div>
+	<br/>
+	<div id="result-output">
+		<div class="table-responsive">          
+			<table class="table" id="orcid-table" data-pagination="true">
+				<thead>
+					<tr>
+						<th data-formatter="runningFormatter">#</th>
+						<th data-field="identifier">ORCID ID</th>
+						<th data-field="fname">First Name</th>
+						<th data-field="lname">Last Name</th>
+						<th data-field="url">URL</th>
+					</tr>
+				</thead>
+			</table>
+		</div>
+	</div>
+</div>
+</body>
+</html>

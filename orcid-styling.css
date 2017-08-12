@@ -1,0 +1,70 @@
+h3 {
+  padding-left:2%;
+  margin-bottom:1%;
+}
+#orcid-api-container{
+  width:100%;
+  max-width:980px;
+  margin:auto;
+}
+#result-output, #orcid-result-display, .fixed-table-loading{
+  display:none;
+}
+#orcid-result-display:checked ~ #result-output{
+  display:block;
+}
+#orcid-table tbody tr {
+  cursor:pointer;
+}
+#logo {
+  width:25%;
+  min-width:160px;
+  margin-left:1%;
+  display:block;
+  margin:auto;
+  margin-top:5%;
+}
+#search-bar{
+  width:100%;
+  padding-left:2%;
+  padding-right:2%;
+}
+#orcid-table{
+  margin:1%;
+}
+#orcid-results-returned{
+  margin-left:2%;
+  font-weight:bold;
+}
+.pull-left{
+  display:none;
+}
+.form-group{
+  width:90%;
+  margin:auto;
+}
+@media screen and (max-width: 736px) {
+    #search-bar, .input-group{
+      width:100%;
+      padding-right:2%;
+    }
+    #orcid-search-value{
+      width:100%;
+      border-radius: 5px;
+    }
+    .input-group-btn{
+      float:left;
+      width:100%;
+      margin-top:1%;
+    }
+    .btn-default{
+      width:50%;
+      margin:1%;
+    }
+    #search-value-check, search-value-clear {
+      border-radius:5px;
+    }
+    #search_orcid{
+      width:100%;
+    }
+}
